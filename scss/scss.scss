@@ -1,0 +1,94 @@
+    *{
+        margin: none;
+        padding: none;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+    }
+    .container-box {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 50px;
+        grid-template-areas:
+        ' a f f f '
+        'a c c c '
+        ;
+      }
+      
+      .box {
+        background-color: #9009A0;
+        border-radius: 5px;
+      
+      }
+      
+      /*.a{
+        grid-area: a;
+        height: 100px;
+        width: 200px;
+      }*/
+      
+      .f {
+        height: 220px;
+        width: 200px;
+        grid-area: f;
+      }
+      ///////////////////////////////////////////////////////////////////////////
+      .btn{
+        width: 48px;
+        height: 48px;
+        font-size: x-small;
+        padding: 0%;
+      }
+      ////////////////////////MENÚ DE NAVEGACIÓN/////////////////////////////////
+      
+      .ht {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+        column-gap: 10px;
+        height: -webkit-fill-available;
+        &__LI a{
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-top: 5px;
+          :hover{
+                  transition: .5s linear;
+                  border-radius: 5px;
+                  border-bottom: 1px solid #f1f1f1;
+                  border-top: 1px solid #f1f1f1;
+                  border-left: 1px solid #f1f1f1;
+                  border-left: 1px solid #f1f1f1;
+                  color: #000;
+                  background-color: #f1f1f1;
+          }
+        }
+      }
+ h1{
+     color: hotpink !important;
+ }
+ .reglas{
+     padding-bottom: 10px;
+ }
+    .descripcion{
+        font-size: small;
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 5px;
+        :hover{
+            transition: 3s;
+            border-bottom: 1px solid black;
+        }
+    }
+    a{
+        color: violet;
+        :hover{
+            border-bottom: 1px solid violet;
+            transition: .3s;
+        }
+    }
